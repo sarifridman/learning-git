@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Demo Project</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        header {
+            background: #24292e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            margin-bottom: 15px;
+            color: #24292e;
+        }
+
+        .card p {
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .features {
+            margin-bottom: 25px;
+        }
+
+        .features li {
+            margin-bottom: 10px;
+        }
+
+        button {
+            background: #2ea44f;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #22863a;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #2ea44f;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Git & GitHub Demo</h1>
+        <p>Simple project for learning version control</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+
+            <h2>Project Overview</h2>
+
+            <p>
+                This project demonstrates a simple workflow using Git and GitHub.
+            </p>
+    
+            <ul class="features">
+                <li>Create a local repository</li>
+                <li>Track file changes</li>
+                <li>Create commits</li>
+                <li>Push code to GitHub</li>
+                <li>Work with branches</li>
+            </ul>
+
+            <button onclick="showMessage()">
+                Click Me
+            </button>
+
+            <div id="message"></div>
+
+        </div>
+    </div>
+
+    <footer>
+        Created for Git & GitHub lesson
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerHTML =
+                "This was done by {{Your Name}} using GitHub!";// Replace {{Your Name}} with your actual name
+        }
+    </script>
+
+</body>
+</html>
